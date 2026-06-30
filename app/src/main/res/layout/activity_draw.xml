@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Draw Digit"
+            android:textColor="#1F1B2E"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Draw one Arabic digit in white on the black canvas"
+            android:textColor="#6B667A"
+            android:textSize="14sp" />
+
+        <FrameLayout
+            android:id="@+id/drawingContainer"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_canvas_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="6dp" />
+
+        <Button
+            android:id="@+id/predictDrawButton"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_button_primary"
+            android:text="Predict"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/clearDrawButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_clear_button"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="Clear"
+            android:textColor="#5E35B1"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/drawResultText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Draw a digit, then press Predict"
+                android:textColor="#1F1B2E"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/drawPreviewImageView"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_image_preview"
+                android:contentDescription="Processed 28 by 28 preview"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
